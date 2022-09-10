@@ -17,7 +17,7 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::resource('task','app\Http\Controllers\TaskController.php');
+Route::resource('task',"\App\Http\Controllers\TaskController");
 
 Route::middleware([
     'auth:sanctum',
