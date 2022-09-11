@@ -7,6 +7,9 @@ use App\Models\Artic;
 
 class ArticController extends Controller
 {
+    public function _construct(){
+        $this->middleware('auth');
+    }
     /**
      * Display a listing of the resource.
      *

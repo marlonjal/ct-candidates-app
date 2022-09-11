@@ -1,7 +1,13 @@
-@extends('layouts.basetemplate')
+@extends('adminlte::page')
+
+@section('title', 'Dashboard')
+
+@section('content_header')
+    <h1>CREATE TASK</h1>
+@stop
 
 @section('content')
-<h2>CREATE TASK</h2>
+
 
 <form action="/artic" method="POST">
     @csrf
@@ -23,5 +29,13 @@
     <a href="/artic" class = "btn btn-secondary" tabindex="5"> Cancel </a>
     <button  type="submit" class = "btn btn-primary" tabindex="4"> Save </button>
 </form>
+@stop
 
-@endsection
+@section('css')
+    <link rel="stylesheet" href="/css/admin_custom.css">
+@stop
+
+
+@section('js')
+    
+@stop
