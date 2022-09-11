@@ -17,6 +17,8 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+
+
 Route::resource('artic',"\App\Http\Controllers\ArticController");
 
 Route::middleware([
