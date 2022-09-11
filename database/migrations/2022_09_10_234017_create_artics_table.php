@@ -15,7 +15,7 @@ return new class extends Migration
     {
         Schema::create('artics', function (Blueprint $table) {
             $table->id();
-            $table->string('task',10);
+            $table->string('task',50);
             $table->string('description',50);
 
             $table->timestamps();
